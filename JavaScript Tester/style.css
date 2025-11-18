@@ -1,0 +1,53 @@
+*{
+  background-color: #E6DCDA;
+}
+
+
+.textevents{
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  font-weight: bold;
+  color: #0C1017;
+  text-decoration: double;
+}
+
+.selecaodeeventos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: slategray;
+}
+
+.selecaodeeventosselect{
+  width: 195px;
+  height: 40px;
+  padding: 10px;
+  margin: auto;
+  color: #420A36;
+  display: flex;
+  background-color: #7C8E9C;
+  font-weight: bold;
+}
+
+
+.blocoteste{
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  margin: auto ;
+  background-color: #0C1017;
+  color: #1E375C;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15% ;
+
+}
+
+.textoteste{
+  background-color: transparent;
+  color: inherit;
+  text-align: center;
+}

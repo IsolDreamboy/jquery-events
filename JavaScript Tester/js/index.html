@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+
+  <div class="Events">
+    <label class="textevents" for="eventosjs">Selecione o Evento</label>
+    <select  class="selecaodeeventosselect" name="eventosjs" id="evento" onchange="exibirEvento()">
+      <option value="Selection" >Please, choose an option.</option>
+      <option value="Nenhuma opçao">none</option>
+      <option value="Click">Click</option>
+      <option value="teste">2</option>
+      <option value="teste">3</option>
+      <option value="teste">4</option>
+      <option value="teste">5</option>
+      <option value="teste">6</option>
+      <option value="teste">7</option>  
+    </select>
+  </div>
+  
+
+<div class="blocoteste">
+  <p class="textoteste" id="textoteste"></p>
+
+</div>
+
+  
+
+    <script>
+
+      function exibirEvento(){
+        var select = document.getElementById("evento");
+        var mensagemTexto = document.getElementById("textoteste");
+
+        var eventoSelecionado = select.value;
+
+        if (eventoSelecionado !== "Selection"){
+          mensagemTexto.innerHTML = "Você está no evento: " + eventoSelecionado
+        } else{
+          mensagemTexto.innerHTML = "";
+        }
+      }
+
+        $(document).ready(function(){
+         (".blocoteste").click(function(){
+           
+             $("#textoteste").text("Você disparou o evento click");
+           }); 
+            $(".blocoteste").mouseenter(function() { 
+            ("#textoteste").text("Você disparou o evento mouse enter");
+           });
+          });
+        
+        
+        
+        
+      
+
+    </script>
+
+
+
+</body>
+</html>
